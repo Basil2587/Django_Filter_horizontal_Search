@@ -1,0 +1,24 @@
+@media (min-width: 1025px) {
+  .change-form .stacked {
+    width: 1025px; /* Was 490px */
+  }
+
+  .change-form .stacked .selector-available,
+  .change-form .stacked .selector-chosen,
+  .change-form .stacked select {
+    width: 1025px; /* Was 480px */
+  }
+
+  .change-form .stacked .selector-available input {
+    width: 925px; /* Was 422px */
+  }
+
+  .change-form .stacked .selector-chosen input {
+    width: 925px; /* Was 422px */
+    margin-left: 8px;
+  }
+
+  .selector-chosen select {
+    border-top: 1px solid #ccc;
+  }
+}
