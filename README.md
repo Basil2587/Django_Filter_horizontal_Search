@@ -2,7 +2,9 @@
 
 Django filter_vertical(filter_horizontal) improvement. Enables search for both available and chosen boxes in filter_vertical(filter_horizontal) fields
 
-Replace in your static/admin/js/SelectFilter2.js
+In file SelectFilter2.js added a second filter for the selected positions. Corrected the file SelectBox.js to properly interact with the new filter. 
+
+Replace in your static/admin/js/SelectFilter2.js and static/admin/js/SelectBox.js
 
 To resize the widget filter vertically, copy the file resize_widget_filter_vertical.css  and paste it into your project
 (static/admin/css/resize_widget_filter_vertical.css)

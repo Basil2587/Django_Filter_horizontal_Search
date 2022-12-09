@@ -91,7 +91,8 @@ Requires core.js and SelectBox.js.
                 'title', interpolate(gettext("Type into this box to filter down the list of available %s."), [field_name])
             );
             filter_p_chosen.appendChild(document.createTextNode(' '));
-
+            
+            // + Filter
             var filter_input_chosen = quickElement('input', filter_p_chosen, '', 'type', 'text', 'placeholder', gettext("Filter"));
             filter_input_chosen.id = field_id + '_input_chosen';
 
@@ -107,8 +108,8 @@ Requires core.js and SelectBox.js.
                     [field_name]
                 )
             );
-            // + Filter
-            var to_box = quickElement('select', selector_chosen, '', 'id', field_id + '_to', 'multiple', 'multiple', 'size', from_box.size, 'name', from_box.name);
+
+            const to_box = quickElement('select', selector_chosen, '', 'id', field_id + '_to', 'multiple', 'multiple', 'size', from_box.size, 'name', from_box.name);
             to_box.className = 'filtered';
 
             const clear_all = quickElement('a', selector_chosen, gettext('Remove all'), 'title', interpolate(gettext('Click to remove all chosen %s at once.'), [field_name]), 'href', '#', 'id', field_id + '_remove_all_link');
